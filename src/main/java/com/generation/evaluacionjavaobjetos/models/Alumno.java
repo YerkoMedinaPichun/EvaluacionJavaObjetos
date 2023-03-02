@@ -7,15 +7,16 @@ public class Alumno extends Persona{
 
   // - - - - - Atributos - - - - -
 
-  // public String nombre;
-  // public String apellido;
-  public String curso;
+  /*
+   * 4.-Aquí en la clase Alumno, también heredo de Persona el nombre y apellido
+   * Además agregro el atributo curso, ya que el alumno pertenece a un curso, agrego un Objeto de tipo Materia que es otra Clase que he creado y agrego un atributo promedioGeneral
+   * 
+   * Bajar para ver el método calcularPromedio
+   */
   
-  //public ArrayList<String> materias;
+  public String curso;
   public Materia materia;
   public ArrayList<Double> notas;
-  //public HashMap<String,ArrayList<Double>> notas;
-  //public HashMap<String,ArrayList<Double>> promedios;
   public Double promedioGeneral;
 
   // - - - - - Constructores - - - - -
@@ -24,14 +25,12 @@ public class Alumno extends Persona{
     super();
   }
   
-  public Alumno(String nombre, String apellido, String curso, Materia materia /*ArrayList<String> materias*/,
-      ArrayList<Double> notas, /*HashMap<String, ArrayList<Double>> promedios,*/ Double promedioGeneral) {
+  public Alumno(String nombre, String apellido, String curso, Materia materia,
+      ArrayList<Double> notas, Double promedioGeneral) {
     super(nombre, apellido);
     this.curso = curso;
     this.materia = materia;
-    //this.materias = materias;
     this.notas = notas;
-    //this.promedios = promedios;
     this.promedioGeneral = promedioGeneral;
   }
 
@@ -59,17 +58,6 @@ public class Alumno extends Persona{
     this.materia = materia;
   }
 
-  // public ArrayList<String> getMaterias() {
-  //   return materias;
-  // }
-
-
-
-  // public void setMaterias(ArrayList<String> materias) {
-  //   this.materias = materias;
-  // }
-
-
 
   public ArrayList<Double> getNotas() {
     return notas;
@@ -80,18 +68,6 @@ public class Alumno extends Persona{
   public void setNotas(ArrayList<Double> notas) {
     this.notas = notas;
   }
-
-
-
-  // public HashMap<String, ArrayList<Double>> getPromedios() {
-  //   return promedios;
-  // }
-
-
-
-  // public void setPromedios(HashMap<String, ArrayList<Double>> promedios) {
-  //   this.promedios = promedios;
-  // }
 
 
 
@@ -106,6 +82,10 @@ public class Alumno extends Persona{
   }
 
   // - - - - - Métodos - - - - -
+  /*  
+   * 5.-Aquí ocupé un Metodo dentro de la Clase alumno, para poder calcular el promedio y agregarlo a la misma instancia del Objeto
+   * Ir a clase Materia
+   */
 
   public Double calcularPromedio(){
     Double promedio = 0.0;
@@ -125,18 +105,6 @@ public class Alumno extends Persona{
   public String toString() {
     return super.toString() + " Alumno [curso=" + curso + ", materia=" + materia + ", notas=" + notas + ", promedioGeneral=" + promedioGeneral + "]";
   }
-
-  // @Override
-  // public String toString() {
-  //   return super.toString() + " Alumno [curso=" + curso + ", materia=" + materia + ", notas=" + notas + ", promedios=" + promedios
-  //       + ", promedioGeneral=" + promedioGeneral + "]";
-  // }
-
-  // @Override
-  // public String toString() {
-  //   return super.toString() + " Alumno [curso=" + curso + ", materias=" + materias + ", notas=" + notas + ", promedios=" + promedios
-  //       + ", promedioGeneral=" + promedioGeneral + "]";
-  // }
 
 
   

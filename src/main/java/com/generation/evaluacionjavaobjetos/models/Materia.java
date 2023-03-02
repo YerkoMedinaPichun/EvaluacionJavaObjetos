@@ -1,6 +1,10 @@
 package com.generation.evaluacionjavaobjetos.models;
 
 public class Materia {
+  /*
+   * 6.-Al objeto materia le agrego el nombre, como por ejemplo "Matemáticas" y profesor, que sería el profesor que da esta materia, ejemplo "Cesar"
+   * Ir a clase Curso
+   */
 
   public String nombre;
   public String profesor;

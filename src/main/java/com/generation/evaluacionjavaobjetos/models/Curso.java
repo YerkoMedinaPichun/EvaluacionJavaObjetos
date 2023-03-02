@@ -3,6 +3,10 @@ package com.generation.evaluacionjavaobjetos.models;
 import java.util.ArrayList;
 
 public class Curso {
+  /*
+   * 7.-Finalmente termino los modelos con la Clase Curso, la que contiene un nombre, ejemplo (IV Medio B) y contiene un ArrayList de objetos Alumno para ir ingresando cada alumno
+   * Volver al Main
+   */
 
   public String nombre;
   public ArrayList<Alumno> alumnos;

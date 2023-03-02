@@ -1,6 +1,11 @@
 package com.generation.evaluacionjavaobjetos.models;
 
 public class Profesor extends Persona {
+  /*
+   * 3.-Acá ocupo extends Persona; para heredar todo de la Clase Persona
+   * Además agrego el atributo curso y materiaImpartida
+   * Ir a clase Alumno
+   */
 
   public String curso;
   public String materiaImpartida;

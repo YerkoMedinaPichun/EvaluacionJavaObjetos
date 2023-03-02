@@ -1,7 +1,10 @@
 package com.generation.evaluacionjavaobjetos.models;
 
 public class Persona {
-  
+  /*
+   * 2.-Creo esta clase con los atributos nombre y apellido, porque más adelante los heredaré en la clase Profesor y Alumno, para no repetirlos nuevamente
+   * Ir a clase Profesor
+   */
   public String nombre;
   public String apellido;
 
